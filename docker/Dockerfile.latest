@@ -19,6 +19,7 @@ RUN apt-get update \
     && pip install --no-cache -r requirements.txt \
     && pip install --no-cache -r requirements-optional.txt \
     && pip install azure-cognitiveservices-speech
+    && pip install --no-cache google-generativeai  # <-- 新增的库
 
 WORKDIR ${BUILD_PREFIX}
 
